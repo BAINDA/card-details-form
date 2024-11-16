@@ -41,8 +41,6 @@
 2. 🖊️ Fill in the card details form to test and see the formatted output.
 3. 🔒 Rest assured that the data stays local and does not leave your browser.
 
-![image](https://github.com/user-attachments/assets/e0cff9c5-4f01-4a8f-917b-75f57b51f8ac)
-
 
 ## How to Install Locally 🛠️
 
