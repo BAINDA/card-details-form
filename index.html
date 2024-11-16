@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png"/>
+    <title>Card Details</title>
+ <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <div class="divCardF">
+          <img  class="frontC" src="images/bg-card-front.png" alt="front card ">
+          <span class="cardN"></span>
+          <span class="cName"></span>
+          <span class="cDate"></span>
+          <svg class="cLogo" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+        </div>
+        <div class="divCardB">
+          <img class="backC" src="images/bg-card-back.png" alt="back card ">
+          <span class="cvcBC"></span>
+        </div>
+      </section>
+      <section class="form">
+        <form>
+          <label for="name" class="fName">CARDHOLDER NAME
+            <input type="text" id="name" placeholder="e.g. Temur Chkonia">
+            <small class="error"></small>
+          </label>
+          <label for="cNumber" class="cNumber">CARD NUMBER
+            <input type="text" id="cNumber" placeholder="e.g. 4140827456390213" maxlength="16">
+            <small class="error"></small>
+          </label>
+          <div class="expire">
+              <label for="month"> EXP. DATE (MM/YY)
+                <div>
+                  <input type="text" id="month" placeholder="MM" maxlength="2">
+                  <label for="year">
+                  <input type="text" id="year" placeholder="YY" maxlength="2">
+                  <div>
+                    <small class="error"></small>
+                  </div>             
+                </div>
+              </label>
+            </label>
+            <label for="cvc">CVC
+              <input type="text" id="cvc" placeholder="e.g. 123" maxlength="3">
+                <small class="error"></small>
+            </label>
+          </div>
+          <button type="submit">Confirm</button>
+        </form>
+      </section>
+      <section class="success">
+     <img src="images/icon-complete.svg" id="complete" alt="Complete IMG">
+        <h2>Thank you!</h2>
+        <p>We've added your card details</p>
+        <button id="continue">Continue</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

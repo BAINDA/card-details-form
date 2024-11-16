@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+:root {
+  font-size: 16px;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #fff;
+  color: hsl(0, 0%, 100%);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 58%;
+  background-image: url(../images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 55% 100%;
+}
+
+.divCardF {
+  position: relative;
+  margin-right: 10%;
+}
+
+.divCardB {
+  position: relative;
+}
+
+.cLogo {
+  left: 7%;
+  top: 10%;
+}
+
+.cvcBC {
+  top: 44%;
+  left: 88%;
+}
+
+.cardN,
+.cName,
+.cDate,
+.cvcBC,
+.cLogo {
+  position: absolute;
+}
+
+.cardN {
+  font-size: 1.8rem;
+  top: 58%;
+  left: 15%;
+}
+
+.cName,
+.cDate {
+  font-size: 1.1rem;
+  top: 80%;
+}
+
+.cName {
+  left: 8%;
+}
+
+.cDate {
+  left: 80%;
+}
+
+.form,
+.success {
+  display: flex;
+  height: 100%;
+  width: 42%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.backC {
+  margin-left: 8%;
+}
+
+form {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+label,
+h2 {
+  color: hsl(278, 68%, 11%);
+  font-weight: 700;
+}
+
+input,
+button {
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+input {
+  border: 1px solid hsl(270, 3%, 87%);
+  color: hsl(279, 6%, 55%);
+}
+
+.inputOk {
+  border-color: hsl(270, 3%, 87%);
+}
+
+.inputerr {
+  border-color: crimson;
+}
+
+input:focus {
+  color: hsl(279, 6%, 55%);
+}
+
+input:focus-visible {
+  outline: 2px solid hsl(278, 68%, 11%);
+}
+
+input:focus::placeholder {
+  color: hsl(279, 6%, 55%);
+}
+
+button {
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: hsl(278, 68%, 11%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(278, 68%, 11%);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.fName,
+.cNumber,
+#cvc {
+  display: flex;
+  flex-direction: column;
+}
+
+#month,
+#year {
+  width: 5rem;
+}
+
+#cvc {
+  width: 140px;
+}
+
+.expire {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.dyError {
+  display: flex;
+  width: 100%;
+}
+
+.yError {
+  width: 59%;
+}
+
+.error {
+  color: crimson;
+  font-weight: 400;
+}
+
+.success {
+  height: 35%;
+  display: none;
+  justify-content: space-evenly;
+}
+
+p {
+  color: hsl(279, 6%, 55%);
+  font-weight: 500;
+}
+
+.displayOn {
+  display: flex;
+}
+
+.displayOf {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  :root {
+    font-size: 15px;
+  }
+
+  img {
+    height: 210px;
+    width: 400px;
+  }
+
+  .form {
+    margin-right: 1%;
+  }
+
+  .backC {
+    margin-left: inherit;
+  }
+
+  .cvcBC {
+    left: 80%;
+  }
+}
+
+@media (max-width: 777px) {
+  :root {
+    font-size: 14px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .card {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    height: 18rem;
+    background-size: 100% 100%;
+  }
+
+  .form {
+    margin-bottom: 1%;
+    height: 55%;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  form {
+    height: 85%;
+  }
+
+  .divCardF {
+    width: 25rem;
+    height: 12.9rem;
+    z-index: 1;
+    bottom: 32%;
+    left: -4%;
+    margin: initial;
+  }
+
+  .divCardB {
+    width: 25rem;
+    height: 12.9rem;
+    left: 4%;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cLogo {
+    left: 7%;
+    top: 13%;
+    transform: scale(1);
+  }
+
+  .cardN {
+    font-size: 1.5rem;
+    left: 19%;
+  }
+
+  .cvcBC {
+    font-size: 1.1rem;
+  }
+
+  input,
+  button {
+    width: 20.7rem;
+  }
+
+  .success {
+    margin: 5rem 0rem 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    font-size: 13.5px;
+  }
+
+  input,
+  button {
+    width: 21rem;
+    height: 3rem;
+  }
+}
+
+#complete {
+  width: 80px;
+  height: 80px;
+}
