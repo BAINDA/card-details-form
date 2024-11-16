@@ -14,9 +14,9 @@
 - 📱 **Responsive Design**: Optimized for all screen sizes, including desktops, tablets, and mobile devices.
 - 🔒 **Privacy Focused**: No data is sent anywhere; all input remains on your device.
 
-## 🌐 Live Demo
+---
 
-Explore the website here: [Card Details Form](https://carddetailsgb.netlify.app/)
+## 🌐 [Live Demo](https://carddetailsgb.netlify.app/)
 
 ---
 
